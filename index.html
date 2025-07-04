@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo Mines de Apostas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>💣 Jogo Mines</h1>
+  <div class="controls">
+    <label>Aposta (R$): <input type="number" id="bet" min="1" value="10"></label>
+    <label>Bombas: 
+      <select id="bombs">
+        <option value="1">1</option>
+        <option value="3" selected>3</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+      </select>
+    </label>
+    <button onclick="startGame()">Iniciar Jogo</button>
+    <button onclick="cashOut()" id="cashout" disabled>Sacar</button>
+  </div>
+
+  <div id="grid" class="grid"></div>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
