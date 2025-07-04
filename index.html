@@ -8,7 +8,7 @@
 <body>
   <h1>💣 Jogo Mines</h1>
   <div class="controls">
-    <label>Aposta (R$): <input type="number" id="bet" min="1" value="10"></label>
+    <label>Aposta (R$): <input type="number" id="bet" min="1" value="5"></label>
     <label>Bombas: 
       <select id="bombs">
         <option value="1">1</option>
@@ -19,11 +19,13 @@
     </label>
     <button onclick="startGame()">Iniciar Jogo</button>
     <button onclick="cashOut()" id="cashout" disabled>Sacar</button>
+	<label>Valor atual da aposta: <textarea id="outputBox" readonly onclick="atualizarOutput()">  </textarea>
+	</label>
   </div>
 
   <div id="grid" class="grid"></div>
   <div id="result"></div>
 
-  <script src="JavaScript.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
