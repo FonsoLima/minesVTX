@@ -79,3 +79,9 @@ function cashOut() {
   if (!gameActive) return;
   endGame(true);
 }
+
+// Mostra o valor da jogada atual
+
+function atualizarOutput() {
+  document.getElementById("outputBox").value = profit;
+}
